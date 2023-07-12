@@ -1,0 +1,33 @@
+.timeline {
+    margin: 10em;
+
+    h1 {
+        margin-bottom: 2em;
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-item {
+        padding: 5em;
+        width: calc(400px + (5em *2));
+        height: calc(470px + (5em *2));
+    }
+
+    .right-border {
+        border-right: 1px solid black;
+    }
+
+    .left-border {
+        border-left: 1px solid black;
+    }
+}
